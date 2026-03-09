@@ -7,6 +7,8 @@
   
 <meta name="description" content="Official portfolio of Vikram Kumar Mehta. HTML CSS JavaScript Developer.">
 <meta name="keywords" content="Vikram Kumar Mehta, Vikram Kushwa, Vikram portfolio , vikram kumar mehta , vikram purnia , vikram singh kushwaha , vikram kushwaha">
+
+<form name="contact" method="POST" data-netlify="true" action="/thankyou.html">
   
 <link rel="stylesheet" href="style.css">
 
@@ -213,13 +215,15 @@ feel free to send me a message.</p>
 
 <div class="contact-form">
 
-<form>
+<form name="contact" method="POST" data-netlify="true">
 
-<input type="text" placeholder="Your Name" required>
+<input type="hidden" name="form-name" value="contact">
 
-<input type="email" placeholder="Your Email" required>
+<input type="text" name="name" placeholder="Your Name" required>
 
-<textarea placeholder="Your Message" rows="5"></textarea>
+<input type="email" name="email" placeholder="Your Email" required>
+
+<textarea name="message" placeholder="Your Message" rows="5" required></textarea>
 
 <button type="submit">Send Message</button>
 
